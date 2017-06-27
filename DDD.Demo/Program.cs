@@ -1,11 +1,11 @@
-﻿using DDD.Demo.Domain_Model;
+﻿using DDD.Demo.src.Domain_Model;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
-namespace DDD.Demo
+namespace DDD.Demo.src
 {
     class Program
     {
