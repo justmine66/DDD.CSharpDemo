@@ -11,7 +11,7 @@ namespace DDD.Demo.src
     {
         static void Main(string[] args)
         {
-
+            //domainModelTest();
             Console.Read();
         }
 
