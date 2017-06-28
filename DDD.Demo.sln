@@ -5,6 +5,13 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Demo", "DDD.Demo\DDD.Demo.csproj", "{56973E96-C234-472B-B6BA-418A5564E0AA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{D2BB947C-4692-43BB-921C-A4AC8391CEDD}"
+	ProjectSection(SolutionItems) = preProject
+		DDD.Demo\docs\CQRS_Journey_Guide.pdf = DDD.Demo\docs\CQRS_Journey_Guide.pdf
+		DDD.Demo\docs\Patterns+of+Enterprise+Application+Architecture+.pdf = DDD.Demo\docs\Patterns+of+Enterprise+Application+Architecture+.pdf
+		DDD.Demo\docs\企业应用架构模式.pdf = DDD.Demo\docs\企业应用架构模式.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
