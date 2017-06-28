@@ -21,6 +21,11 @@ namespace DDD.Demo.Table_Module
         public int ID { get; set; }
 
         /// <summary>
+        /// 产品标识
+        /// </summary>
+        public int ProductID { get; set; }
+
+        /// <summary>
         /// 签订时间
         /// </summary>
         public DateTime WhenSigned { get; set; }
