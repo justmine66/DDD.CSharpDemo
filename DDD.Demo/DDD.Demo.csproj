@@ -48,27 +48,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\Domain Model\CompleteRecognitionStrategy.cs" />
-    <Compile Include="src\Domain Model\Contract.cs" />
-    <Compile Include="src\Domain Model\Product.cs" />
-    <Compile Include="src\Domain Model\RecognitionStrategy.cs" />
-    <Compile Include="src\Domain Model\RevenueRecognition.cs" />
-    <Compile Include="src\Domain Model\ThreeWayRecognitionStrategy.cs" />
+    <Compile Include="Domain Model\CompleteRecognitionStrategy.cs" />
+    <Compile Include="Domain Model\Contract.cs" />
+    <Compile Include="Domain Model\Product.cs" />
+    <Compile Include="Domain Model\RecognitionStrategy.cs" />
+    <Compile Include="Domain Model\RevenueRecognition.cs" />
+    <Compile Include="Domain Model\ThreeWayRecognitionStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="src\Transaction Script\Contract.cs" />
-    <Compile Include="src\Transaction Script\EF\Gateway.cs" />
-    <Compile Include="src\Transaction Script\EF\IntegrationDBContext.cs" />
-    <Compile Include="src\Transaction Script\Product.cs" />
-    <Compile Include="src\Transaction Script\RevenueRecognition.cs" />
-    <Compile Include="src\Transaction Script\Services\RecognitionService.cs" />
+    <Compile Include="Transaction Script\Contract.cs" />
+    <Compile Include="Transaction Script\EF\Gateway.cs" />
+    <Compile Include="Transaction Script\EF\IntegrationDBContext.cs" />
+    <Compile Include="Transaction Script\Product.cs" />
+    <Compile Include="Transaction Script\RevenueRecognition.cs" />
+    <Compile Include="Transaction Script\Services\RecognitionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\Table Module\" />
+    <Folder Include="Table Module\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
