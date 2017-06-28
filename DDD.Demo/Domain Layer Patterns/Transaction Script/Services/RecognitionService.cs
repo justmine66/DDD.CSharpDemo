@@ -29,7 +29,7 @@ namespace DDD.Demo.Transaction_Script.Services
         }
 
         /// <summary>
-        /// 计算某合同的收入确认
+        /// 计算某合同的收入确认额
         /// </summary>
         /// <param name="contractNumber">合同标识</param>
         public void CalculateRecognitions(int contractNumber)

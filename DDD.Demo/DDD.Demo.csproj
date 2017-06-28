@@ -48,28 +48,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain Model\CompleteRecognitionStrategy.cs" />
-    <Compile Include="Domain Model\Contract.cs" />
-    <Compile Include="Domain Model\Product.cs" />
-    <Compile Include="Domain Model\RecognitionStrategy.cs" />
-    <Compile Include="Domain Model\RevenueRecognition.cs" />
-    <Compile Include="Domain Model\ThreeWayRecognitionStrategy.cs" />
+    <Compile Include="Datasource Layer Patterns\Table Data Gateway\Layer SuperTypes\DataGateway.cs" />
+    <Compile Include="Datasource Layer Patterns\Table Data Gateway\Layer SuperTypes\DataSetHolder.cs" />
+    <Compile Include="Datasource Layer Patterns\Table Data Gateway\PersonGateway.cs" />
+    <Compile Include="Domain Layer Patterns\Domain Model\CompleteRecognitionStrategy.cs" />
+    <Compile Include="Domain Layer Patterns\Domain Model\Contract.cs" />
+    <Compile Include="Domain Layer Patterns\Domain Model\Product.cs" />
+    <Compile Include="Domain Layer Patterns\Domain Model\RecognitionStrategy.cs" />
+    <Compile Include="Domain Layer Patterns\Domain Model\RevenueRecognition.cs" />
+    <Compile Include="Domain Layer Patterns\Domain Model\ThreeWayRecognitionStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Table Module\Contract.cs" />
-    <Compile Include="Table Module\Layer SuperTypes\Contract.cs" />
-    <Compile Include="Table Module\Layer SuperTypes\Product.cs" />
-    <Compile Include="Table Module\Layer SuperTypes\RevenueRecognition.cs" />
-    <Compile Include="Table Module\Layer SuperTypes\TableModule.cs" />
-    <Compile Include="Table Module\Product.cs" />
-    <Compile Include="Table Module\RevenueRecognition.cs" />
-    <Compile Include="Table Module\ValueoObjects\ProductType.cs" />
-    <Compile Include="Transaction Script\Contract.cs" />
-    <Compile Include="Transaction Script\EF\Gateway.cs" />
-    <Compile Include="Transaction Script\EF\IntegrationDBContext.cs" />
-    <Compile Include="Transaction Script\Product.cs" />
-    <Compile Include="Transaction Script\RevenueRecognition.cs" />
-    <Compile Include="Transaction Script\Services\RecognitionService.cs" />
+    <Compile Include="Domain Layer Patterns\Service Layer\ApplicationService.cs" />
+    <Compile Include="Domain Layer Patterns\Service Layer\Gateways\IEmailGateway.cs" />
+    <Compile Include="Domain Layer Patterns\Service Layer\Gateways\IIntegrationGateway.cs" />
+    <Compile Include="Domain Layer Patterns\Service Layer\RecognitionService.cs" />
+    <Compile Include="Domain Layer Patterns\Table Module\Contract.cs" />
+    <Compile Include="Domain Layer Patterns\Table Module\Layer SuperTypes\Contract.cs" />
+    <Compile Include="Domain Layer Patterns\Table Module\Layer SuperTypes\Product.cs" />
+    <Compile Include="Domain Layer Patterns\Table Module\Layer SuperTypes\RevenueRecognition.cs" />
+    <Compile Include="Domain Layer Patterns\Table Module\Layer SuperTypes\TableModule.cs" />
+    <Compile Include="Domain Layer Patterns\Table Module\Product.cs" />
+    <Compile Include="Domain Layer Patterns\Table Module\RevenueRecognition.cs" />
+    <Compile Include="Domain Layer Patterns\Table Module\ValueoObjects\ProductType.cs" />
+    <Compile Include="Domain Layer Patterns\Transaction Script\Contract.cs" />
+    <Compile Include="Domain Layer Patterns\Transaction Script\EF\Gateway.cs" />
+    <Compile Include="Domain Layer Patterns\Transaction Script\EF\IntegrationDBContext.cs" />
+    <Compile Include="Domain Layer Patterns\Transaction Script\Product.cs" />
+    <Compile Include="Domain Layer Patterns\Transaction Script\RevenueRecognition.cs" />
+    <Compile Include="Domain Layer Patterns\Transaction Script\Services\RecognitionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

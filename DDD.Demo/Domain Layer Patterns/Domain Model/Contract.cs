@@ -14,7 +14,7 @@ namespace DDD.Demo.Domain_Model
         /// <summary>
         /// 合同标识
         /// </summary>
-        private long id;
+        private int id;
         /// <summary>
         /// 产品
         /// </summary>
@@ -32,6 +32,7 @@ namespace DDD.Demo.Domain_Model
         /// </summary>
         private ArrayList revenueRecognitions = new ArrayList();
 
+        public Contract() { }
         public Contract(Product product, decimal revenue, DateTime whenSigned)
         {
             this.product = product;
@@ -89,6 +90,21 @@ namespace DDD.Demo.Domain_Model
         public DateTime GetWhenSigned()
         {
             return this.whenSigned;
+        }
+
+        public static Contract ReadForUpdate(int id)
+        {
+            return new Contract() ;
+        }
+
+        public string GetAdministratorEmailAddress()
+        {
+            return "943299334@qq.com";
+        }
+
+        public int GetID()
+        {
+            return id;
         }
     }
 }
