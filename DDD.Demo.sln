@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{D2BB947C-4
 		DDD.Demo\docs\企业应用架构模式.pdf = DDD.Demo\docs\企业应用架构模式.pdf
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{81E68CD2-60D3-466D-9E09-43B699AC2BC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{44258B09-3462-4F57-9439-29C42B5EA59F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{56973E96-C234-472B-B6BA-418A5564E0AA} = {81E68CD2-60D3-466D-9E09-43B699AC2BC3}
 	EndGlobalSection
 EndGlobal
