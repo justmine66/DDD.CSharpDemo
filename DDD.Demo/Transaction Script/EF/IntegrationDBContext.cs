@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 
-namespace DDD.Demo.src.Transaction_Script.EF
+namespace DDD.Demo.Transaction_Script.EF
 {
     public class IntegrationDBContext : DbContext
     {

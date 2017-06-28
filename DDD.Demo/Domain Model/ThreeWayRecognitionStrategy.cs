@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DDD.Demo.src.Domain_Model
+namespace DDD.Demo.Domain_Model
 {
     public class ThreeWayRecognitionStrategy : RecognitionStrategy
     {

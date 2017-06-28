@@ -1,10 +1,10 @@
-﻿using DDD.Demo.src.Transaction_Script.EF;
+﻿using DDD.Demo.Transaction_Script.EF;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DDD.Demo.src.Transaction_Script.Services
+namespace DDD.Demo.Transaction_Script.Services
 {
     /// <summary>
     /// 收入确认服务

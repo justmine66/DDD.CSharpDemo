@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 
-namespace DDD.Demo.src.Transaction_Script
+namespace DDD.Demo.Transaction_Script
 {
     /// <summary>
     /// 合同类
