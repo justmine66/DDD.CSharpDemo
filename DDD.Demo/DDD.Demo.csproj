@@ -85,6 +85,10 @@
     <None Include="001 docs\企业应用架构模式.pdf" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Datasource Layer Patterns\Active Record\" />
+    <Folder Include="Datasource Layer Patterns\Data Mapper\" />
+    <Folder Include="Datasource Layer Patterns\Row Data Gateway\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
