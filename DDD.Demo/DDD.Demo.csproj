@@ -65,9 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="docs\CQRS_Journey_Guide.pdf" />
-    <None Include="docs\Patterns+of+Enterprise+Application+Architecture+.pdf" />
-    <None Include="docs\企业应用架构模式.pdf" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
