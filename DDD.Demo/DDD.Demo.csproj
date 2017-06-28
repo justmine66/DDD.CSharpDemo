@@ -56,6 +56,14 @@
     <Compile Include="Domain Model\ThreeWayRecognitionStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Table Module\Contract.cs" />
+    <Compile Include="Table Module\Layer SuperTypes\Contract.cs" />
+    <Compile Include="Table Module\Layer SuperTypes\Product.cs" />
+    <Compile Include="Table Module\Layer SuperTypes\RevenueRecognition.cs" />
+    <Compile Include="Table Module\Layer SuperTypes\TableModule.cs" />
+    <Compile Include="Table Module\Product.cs" />
+    <Compile Include="Table Module\RevenueRecognition.cs" />
+    <Compile Include="Table Module\ValueoObjects\ProductType.cs" />
     <Compile Include="Transaction Script\Contract.cs" />
     <Compile Include="Transaction Script\EF\Gateway.cs" />
     <Compile Include="Transaction Script\EF\IntegrationDBContext.cs" />
@@ -70,8 +78,6 @@
     <None Include="docs\企业应用架构模式.pdf" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Table Module\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
