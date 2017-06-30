@@ -48,6 +48,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base Patterns\registry\singleton\PersonFinderStub.cs" />
+    <Compile Include="Base Patterns\registry\singleton\Registry.cs" />
+    <Compile Include="Base Patterns\registry\singleton\RegistryStub.cs" />
+    <Compile Include="Base Patterns\registry\thread safe\ThreadLocalRegitry.cs" />
+    <Compile Include="Datasource Layer Patterns\Row Data Gateway\PersonFinder.cs" />
+    <Compile Include="Datasource Layer Patterns\Row Data Gateway\PersonGateway.cs" />
+    <Compile Include="Datasource Layer Patterns\Row Data Gateway\ResultSet.cs" />
     <Compile Include="Datasource Layer Patterns\Table Data Gateway\Layer SuperTypes\DataGateway.cs" />
     <Compile Include="Datasource Layer Patterns\Table Data Gateway\Layer SuperTypes\DataSetHolder.cs" />
     <Compile Include="Datasource Layer Patterns\Table Data Gateway\PersonGateway.cs" />
@@ -88,7 +95,6 @@
   <ItemGroup>
     <Folder Include="Datasource Layer Patterns\Active Record\" />
     <Folder Include="Datasource Layer Patterns\Data Mapper\" />
-    <Folder Include="Datasource Layer Patterns\Row Data Gateway\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
