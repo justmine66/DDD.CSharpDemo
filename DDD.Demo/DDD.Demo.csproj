@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base Patterns\gateway\Environment.cs" />
+    <Compile Include="Base Patterns\gateway\IMessageGateway.cs" />
     <Compile Include="Base Patterns\gateway\MessageGateway.cs" />
     <Compile Include="Base Patterns\gateway\MessageGatewayStub.cs" />
     <Compile Include="Base Patterns\gateway\MessageSender.cs" />

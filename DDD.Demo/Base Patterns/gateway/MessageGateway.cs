@@ -9,7 +9,7 @@ namespace DDD.Demo.Base_Patterns.gateway
     /// <summary>
     /// 消息网关
     /// </summary>
-    public class MessageGateway
+    public class MessageGateway : IMessageGateway
     {
         protected static string CONFIRM = "CNFRM";//代表确认信息
         private MessageSender sender;
