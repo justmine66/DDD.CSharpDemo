@@ -48,6 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base Patterns\gateway\Environment.cs" />
+    <Compile Include="Base Patterns\gateway\MessageGateway.cs" />
+    <Compile Include="Base Patterns\gateway\MessageGatewayStub.cs" />
+    <Compile Include="Base Patterns\gateway\MessageSender.cs" />
     <Compile Include="Base Patterns\registry\singleton\PersonFinderStub.cs" />
     <Compile Include="Base Patterns\registry\singleton\Registry.cs" />
     <Compile Include="Base Patterns\registry\singleton\RegistryStub.cs" />
