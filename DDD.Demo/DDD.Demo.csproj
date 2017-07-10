@@ -57,6 +57,10 @@
     <Compile Include="Base Patterns\registry\singleton\Registry.cs" />
     <Compile Include="Base Patterns\registry\singleton\RegistryStub.cs" />
     <Compile Include="Base Patterns\registry\thread safe\ThreadLocalRegitry.cs" />
+    <Compile Include="Base Patterns\value object\Currency.cs" />
+    <Compile Include="Base Patterns\value object\CurrencyOptions.cs" />
+    <Compile Include="Base Patterns\value object\Money.cs" />
+    <Compile Include="Base Patterns\value object\RoundingMode.cs" />
     <Compile Include="Datasource Layer Patterns\Row Data Gateway\PersonFinder.cs" />
     <Compile Include="Datasource Layer Patterns\Row Data Gateway\PersonGateway.cs" />
     <Compile Include="Datasource Layer Patterns\Row Data Gateway\ResultSet.cs" />
