@@ -1,109 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{56973E96-C234-472B-B6BA-418A5564E0AA}</ProjectGuid>
+    <TargetFramework>net5.0</TargetFramework>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DDD.Demo</RootNamespace>
-    <AssemblyName>DDD.Demo</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Data.OleDb" Version="5.0.0" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Base Patterns\gateway\Environment.cs" />
-    <Compile Include="Base Patterns\gateway\IMessageGateway.cs" />
-    <Compile Include="Base Patterns\gateway\MessageGateway.cs" />
-    <Compile Include="Base Patterns\gateway\MessageGatewayStub.cs" />
-    <Compile Include="Base Patterns\gateway\MessageSender.cs" />
-    <Compile Include="Base Patterns\registry\singleton\PersonFinderStub.cs" />
-    <Compile Include="Base Patterns\registry\singleton\Registry.cs" />
-    <Compile Include="Base Patterns\registry\singleton\RegistryStub.cs" />
-    <Compile Include="Base Patterns\registry\thread safe\ThreadLocalRegitry.cs" />
-    <Compile Include="Base Patterns\value object\Currency.cs" />
-    <Compile Include="Base Patterns\value object\CurrencyOptions.cs" />
-    <Compile Include="Base Patterns\value object\Money.cs" />
-    <Compile Include="Base Patterns\value object\RoundingMode.cs" />
-    <Compile Include="Datasource Layer Patterns\Row Data Gateway\PersonFinder.cs" />
-    <Compile Include="Datasource Layer Patterns\Row Data Gateway\PersonGateway.cs" />
-    <Compile Include="Datasource Layer Patterns\Row Data Gateway\ResultSet.cs" />
-    <Compile Include="Datasource Layer Patterns\Table Data Gateway\Layer SuperTypes\DataGateway.cs" />
-    <Compile Include="Datasource Layer Patterns\Table Data Gateway\Layer SuperTypes\DataSetHolder.cs" />
-    <Compile Include="Datasource Layer Patterns\Table Data Gateway\PersonGateway.cs" />
-    <Compile Include="Domain Layer Patterns\Domain Model\CompleteRecognitionStrategy.cs" />
-    <Compile Include="Domain Layer Patterns\Domain Model\Contract.cs" />
-    <Compile Include="Domain Layer Patterns\Domain Model\Product.cs" />
-    <Compile Include="Domain Layer Patterns\Domain Model\RecognitionStrategy.cs" />
-    <Compile Include="Domain Layer Patterns\Domain Model\RevenueRecognition.cs" />
-    <Compile Include="Domain Layer Patterns\Domain Model\ThreeWayRecognitionStrategy.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Domain Layer Patterns\Service Layer\ApplicationService.cs" />
-    <Compile Include="Domain Layer Patterns\Service Layer\Gateways\IEmailGateway.cs" />
-    <Compile Include="Domain Layer Patterns\Service Layer\Gateways\IIntegrationGateway.cs" />
-    <Compile Include="Domain Layer Patterns\Service Layer\RecognitionService.cs" />
-    <Compile Include="Domain Layer Patterns\Table Module\Contract.cs" />
-    <Compile Include="Domain Layer Patterns\Table Module\Layer SuperTypes\Contract.cs" />
-    <Compile Include="Domain Layer Patterns\Table Module\Layer SuperTypes\Product.cs" />
-    <Compile Include="Domain Layer Patterns\Table Module\Layer SuperTypes\RevenueRecognition.cs" />
-    <Compile Include="Domain Layer Patterns\Table Module\Layer SuperTypes\TableModule.cs" />
-    <Compile Include="Domain Layer Patterns\Table Module\Product.cs" />
-    <Compile Include="Domain Layer Patterns\Table Module\RevenueRecognition.cs" />
-    <Compile Include="Domain Layer Patterns\Table Module\ValueoObjects\ProductType.cs" />
-    <Compile Include="Domain Layer Patterns\Transaction Script\Contract.cs" />
-    <Compile Include="Domain Layer Patterns\Transaction Script\EF\Gateway.cs" />
-    <Compile Include="Domain Layer Patterns\Transaction Script\EF\IntegrationDBContext.cs" />
-    <Compile Include="Domain Layer Patterns\Transaction Script\Product.cs" />
-    <Compile Include="Domain Layer Patterns\Transaction Script\RevenueRecognition.cs" />
-    <Compile Include="Domain Layer Patterns\Transaction Script\Services\RecognitionService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="001 docs\CQRS_Journey_Guide.pdf" />
-    <None Include="001 docs\Patterns+of+Enterprise+Application+Architecture+.pdf" />
-    <None Include="001 docs\企业应用架构模式.pdf" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Datasource Layer Patterns\Active Record\" />
-    <Folder Include="Datasource Layer Patterns\Data Mapper\" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>

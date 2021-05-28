@@ -1,10 +1,9 @@
 ﻿using DDD.Demo.Base_Patterns.value_object;
 using DDD.Demo.Domain_Model;
+using DDD.Demo.Samples.DddPlusEcs;
+using DDD.Demo.Samples.ECS;
+using DDD.Demo.Samples.OOP;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
 
 namespace DDD.Demo
 {
@@ -13,6 +12,11 @@ namespace DDD.Demo
         static void Main(string[] args)
         {
             //domainModelTest();
+
+            OopTester.Run();
+            EcsTester.Run();
+            DddPlusEcsTester.Run();
+
             Console.Read();
         }
 

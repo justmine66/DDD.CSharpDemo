@@ -1,5 +1,4 @@
 using DDD.Demo.Base_Patterns.value_object;
-using System;
 using Xunit;
 
 namespace MoneyUnitTest
